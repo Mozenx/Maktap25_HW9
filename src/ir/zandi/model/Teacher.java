@@ -1,5 +1,7 @@
 package ir.zandi.model;
 
+import org.hibernate.annotations.Check;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
