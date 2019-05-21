@@ -1,16 +1,14 @@
 package ir.zandi.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "students")
-public class Student {
+public class Student implements Serializable {
 
     @Id
-    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "first_name")
@@ -22,8 +20,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(long id, String firstName, String lastName) {
-        this.id = id;
+    public Student(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }

@@ -16,6 +16,7 @@
 <!--        <property name="hibernate.hbm2ddl.auto">create</property>-->
 
         <mapping class="ir.zandi.model.Teacher"></mapping>
+        <mapping class="ir.zandi.model.Student"></mapping>
 
 
     </session-factory>

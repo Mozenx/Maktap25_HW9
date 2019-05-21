@@ -1,6 +1,9 @@
 package ir.zandi;
 
+import ir.zandi.model.Student;
 import ir.zandi.model.Teacher;
+import ir.zandi.model.dao.StudentDao;
+import ir.zandi.model.dao.StudentDaoImpl;
 import ir.zandi.model.dao.TeacherDao;
 import ir.zandi.model.dao.TeacherDaoImpl;
 import org.hibernate.SessionFactory;
@@ -20,17 +23,26 @@ public class MainApp {
 //                4000,LocalDate.of(1340,03,23));
 //        Teacher teacher2 = new Teacher("Reza","Madani",1234L,
 //                344,LocalDate.of(1356,11,14));
+//
+//        Student student = new Student("Jafar","Soltani");
+//        Student student1 = new Student("Soltan", "Jafari");
 
 
         TeacherDao dao = new TeacherDaoImpl(factory);
-
+        StudentDao dao1 = new StudentDaoImpl(factory);
+//
+//        dao1.create(student);
+//        dao1.create(student1);
+//
 //        dao.create(teacher);
 //        dao.create(teacher1);
 //        dao.create(teacher2);
 //        dao.removeByTeacherCode(12345);
 
-        System.out.println(dao.showMaxAndMinSalary());
-        System.out.println(dao.showYoungestAndOldest());
+//        System.out.println(dao.showMaxAndMinSalary());
+//        System.out.println(dao.showYoungestAndOldest());
+
+        System.out.println(dao1.findByName("Jafari"));
 
         factory.close();
 

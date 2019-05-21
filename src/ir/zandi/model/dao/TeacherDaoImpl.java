@@ -19,7 +19,7 @@ public class TeacherDaoImpl extends BaseDaoImpl<Teacher> implements  TeacherDao{
 
     @Override
     protected String getEntityName() {
-        return null;
+        return "Teacher";
     }
 
     @Override
