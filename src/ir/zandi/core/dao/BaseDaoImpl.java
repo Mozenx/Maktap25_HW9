@@ -5,7 +5,7 @@ import org.hibernate.SessionFactory;
 
 import java.io.Serializable;
 
-public class BaseDaoImpl<E extends Serializable> implements BaseDao<E> {
+public abstract class BaseDaoImpl<E extends Serializable> implements BaseDao<E> {
 
     private final SessionFactory factory;
 
@@ -14,6 +14,7 @@ public class BaseDaoImpl<E extends Serializable> implements BaseDao<E> {
     }
 
     protected abstract String getEntityName();
+
     @Override
     public void create(E e) {
         Session session = factory.openSession();
