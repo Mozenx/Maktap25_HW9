@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public interface BaseDao<E extends Serializable> {
 
-    void ceate(E e);
+    void create(E e);
 
     E update(E e);
 
