@@ -62,7 +62,7 @@ public abstract class BaseDaoImpl<E extends Serializable> implements BaseDao<E> 
 
         session.beginTransaction();
 
-        session.createQuery("delete from " + getEntityName()+ " as entity where entity .id = " + id);
+        session.createQuery("delete from " + getEntityName()+ " as entity where entity.id = " + id);
 
         session.getTransaction().commit();
 

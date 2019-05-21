@@ -27,6 +27,9 @@ public class Teacher implements Serializable {
     @Column(name = "birthday")
     private LocalDate birthday;
 
+    public Teacher() {
+    }
+
     public Teacher(String firstName, String lastName, long teacherCode, double salary, LocalDate birthday) {
         this.firstName = firstName;
         this.lastName = lastName;

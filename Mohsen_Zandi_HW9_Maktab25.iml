@@ -3,9 +3,11 @@
   <component name="FacetManager">
     <facet type="hibernate" name="Hibernate">
       <configuration>
-        <datasource-map />
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" value="5fb8720e-ad19-417d-8e3e-1f8de3b2ee92" />
+        </datasource-map>
         <naming-strategy-map />
-        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/hibernate.cfg.xml" />
       </configuration>
     </facet>
   </component>
@@ -18,5 +20,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="mariadb-java-client-2.4.1" level="project" />
     <orderEntry type="library" name="SpringAndHibernate" level="project" />
+    <orderEntry type="library" name="jaxbJarFiles" level="project" />
   </component>
 </module>
